@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+//O(n) time, O(n) space solution for finding first repeating pattern of length 3 (can be modified for length k)
+
 void findRepeatPattern(int n, string s){
     set<string> S;
     string ans;
