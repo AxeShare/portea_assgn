@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+//O(n) time, O(1) space solution for finding maximum product triplet in given array
+
 vector<int> find_max(int n, vector<int> A){
     vector<int> res(3,0);
     int max_first, max_second, max_third;
@@ -70,14 +72,14 @@ vector<int> maxProdtriplet(int n, vector<int> A){
 }
 
 int main(){
-    int n;
+    int n; //size of array
     cin >> n;
     vector<int> A(n,0);
     for(int i=0; i<n; i++){
         cin >> A[i];
     }
     
-    vector<int> ans = maxProdtriplet(n,A);
+    vector<int> ans = maxProdtriplet(n,A); //ans vector stores the triplet
     cout << ans[0] << " " << ans[1] << " " << ans[2] << endl;
     return 0;
  
